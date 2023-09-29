@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .hearts-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">QUIZ GABUT ANJG</h1>
+        <button onclick="startQuiz()">Mulai Kuis</button>
+        <button onclick="showAbout()">About</button>
+    </div>
+
+    <div id="quiz-container" class="container hidden">
+        <div id="question"></div>
+        <div id="options"></div>
+    </div>
+
+    <div id="chances-message" class="hidden">
+        Kesempatan Anda habis! Kembali ke tampilan awal untuk mencoba lagi.
+    </div>
+
+    <div class="watermark">
+        CREATED BY PUTRA PALING GANTENG PACAR SYIFA
+    </div>
+
+    <div class="hearts-container">
+        <span id="hearts">&#x2764;&#x2764;&#x2764;</span>
+    </div>
+    
+<<div class="blur-background" onclick="hideAbout()" id="blur-background">
+    <div id="about-container"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
